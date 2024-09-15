@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Overpass", sans-serif;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+}
+
+/* RATING */
+.rating {
+    background-color: hsl(213, 19%, 18%);
+    padding: 20px;
+    margin: 30px;
+    position: absolute;
+    width: 80%;
+    height: auto;
+    top: 20%;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.star {
+    background-color: hsl(220, 21%, 26%);
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.star img {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 27px;
+}
+
+.rating h1 {
+    color: white;
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+.rating p {
+    color: hsl(217, 12%, 63%);
+    font-size: 0.8rem;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn button {
+    width: 30px;
+    height: auto;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: hsl(220, 21%, 26%);
+    color: hsl(217, 12%, 63%);
+    margin-top: 10px;
+}
+
+.btn button:hover {
+    background-color: #fc7613;
+    color: black;
+}
+
+.btn button:focus {
+    background-color: white;
+    color: black;
+}
+
+.submit-btn button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: #fc7613;
+    font-weight: 600;
+    border: none;
+}
+
+.submit-btn button:active {
+    background-color: white;
+}
+
+/* THANK YOU */
+.thankyou {
+    background-color: hsl(213, 19%, 18%);
+    padding: 20px;
+    margin: 30px;
+    position: absolute;
+    width: 80%;
+    height: auto;
+    top: 20%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.thankyou img {
+    width: 100px;
+    margin-left: 25%;
+}
+
+#result {
+    margin: auto;
+    margin-top: 15px;
+    background-color: hsl(220, 21%, 26%);
+    width: 70%;
+    font-size: small;
+    border-radius: 10px;
+    padding: 2px;
+    text-align: center;
+    color: #fc7613;
+    opacity: 0.8;
+}
+
+.thankyou h1 {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.para {
+    color: hsl(217, 12%, 63%);
+    font-size: small;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* RESPONSIVE */
+
+@media (min-width:321px){
+    .rating{
+        margin: 40px;
+    }
+    .thankyou{
+        margin: 40px;
+    }
+}
+@media(min-width:376px){
+    .rating{
+        margin: 45px;
+    }
+    .thankyou{
+        margin: 45px;
+    }
+    .thankyou img{
+        margin-left: 35%;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    .thankyou p{
+        margin-top: 30px;
+    }
+    .thankyou h1{
+        margin-top: 30px;
+    }
+    .rating h1{
+        margin: 20px;
+        margin-left: 0;
+    }
+    .rating p{
+        margin-bottom: 20px;
+    }
+    .submit{
+        margin-bottom: 20px;
+    }
+}
+@media(min-width:426px){
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .rating{
+        width: 40%;
+    }
+    .thankyou{
+        width: 40%;
+    }
+}
+@media(min-width:769px){
+    .rating{
+        width: 30%;
+    }
+    .thankyou{
+        width: 30%;
+    }
+}
+@media(min-width:1025px){
+    .thankyou h1{
+        font-size: 2rem;
+    }
+    .thankyou p{
+        font-size: 1rem;
+    }
+    .rating{
+        width: 30%;
+    }
+    .rating h1{
+        font-size: 2rem;
+    }
+    .rating p{
+        font-size: 1rem;
+    }
+    .btn button{
+        width: 60px;
+        height: 60px;
+    }
+    .submit-btn button{
+        padding: 15px;
+    }
+}
